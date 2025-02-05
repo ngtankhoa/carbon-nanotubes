@@ -80,7 +80,6 @@
 
 * {
   box-sizing: border-box;
-  transition: 1s;
 }
 
 body {
@@ -612,7 +611,6 @@ a.button {
   font-family: 'Ubuntu';
   font-variant: small-caps;
   font-weight: normal;
-  transition: 1s;
 }
 
 a.button-light {
