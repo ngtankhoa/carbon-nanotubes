@@ -2,7 +2,12 @@
 const baseUrl = import.meta.env.BASE_URL
 ---
 
-<header slot='first-in-body'><a href=`${baseUrl}/blog`>To Astro Blog</a> <span> &rarr;</span></header>
+<header slot='first-in-body'>
+  <a href=`${baseUrl}/blog`
+    ><span style='text-decoration: underline;'>To Astro Blog</span><span class='arrow'> &rarr;</span></a
+  >
+</header>
+
 <style>
   header {
     position: fixed;
@@ -14,12 +19,23 @@ const baseUrl = import.meta.env.BASE_URL
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    gap: 6px;
     z-index: 10;
     background-color: white;
   }
-  span {
+  .arrow {
     font-size: 1.5em;
+    transition-duration: 0.3s;
+  }
+  a:hover .arrow {
+    transform: translateX(4px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
 </style>
