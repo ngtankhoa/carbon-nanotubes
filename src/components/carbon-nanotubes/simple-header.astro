@@ -1,4 +1,8 @@
-<header slot='first-in-body'><a href='/carbon-nanotubes/blog'>To Astro Blog</a> <span> &rarr;</span></header>
+---
+const baseUrl = import.meta.env.BASE_URL
+---
+
+<header slot='first-in-body'><a href=`${baseUrl}/blog`>To Astro Blog</a> <span> &rarr;</span></header>
 <style>
   header {
     position: fixed;
