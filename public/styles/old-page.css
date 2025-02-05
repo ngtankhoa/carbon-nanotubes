@@ -706,7 +706,7 @@ textarea {
   border-radius: 0.5rem;
   border: 2px solid var(--light-grey);
   font-family: 'Ubuntu Thin';
-  font-size: 0.8em;
+  font-size: 1em;
   width: 47%;
   resize: vertical;
 }
