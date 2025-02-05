@@ -64,7 +64,6 @@
     <link rel="stylesheet" href="/styles/old-page.css" />
   </head>
   <body>
-    <slot name="first-in-body"></slot>
     <section class="left" id="title">
       <div class="bg-cnt-img fadetwo"></div>
       <h1 class="slide-in-from-left animate">Industrial CNT</h1>
@@ -211,6 +210,7 @@
       </form>
       <p id="copyright">© 2022 Industrial CNT LLC</p>
     </section>
+    <slot name="header"></slot>
 
     <script src="/scripts/contact.js"></script>
     <script src="/scripts/animate-on-scroll.js"></script>
