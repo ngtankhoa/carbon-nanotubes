@@ -1,0 +1,23 @@
+---
+import Homepage from '@components/homepage.html'
+---
+
+<Homepage>
+  <header slot='first-in-body'><a href='/blog'>To Astro Blog</a> <span> &rarr;</span></header>
+</Homepage>
+
+<style>
+  header {
+    margin: 0;
+    padding: 0.2em 1em;
+    background: white;
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+  }
+  span {
+    font-size: 1.5em;
+  }
+</style>
